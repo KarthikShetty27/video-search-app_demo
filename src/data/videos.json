@@ -20,11 +20,12 @@
         "tags": ["tag1"],
         "link": "https://youtube.com/embed/fuhE6PYnRMc"
     },
+
     {
         "id": 4,
         "title": "Video 4",
         "description": "Description for Video 4",
-        "tags": ["tag1","tag4", "tag3"],
+        "tags": ["tag4", "tag3"],
         "link": "https://www.youtube.com/embed/tpvO6wGqBLY"
     }
 ]
