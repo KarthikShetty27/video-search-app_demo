@@ -20,16 +20,15 @@ const VideoSearchApp = () => {
   };
 
   return (
-    <div>
-      <h1>Video Search App</h1>
-      <div class="input-group">
-        <div class="form-outline">
-          <input type="text" placeholder="Enter your query" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} class="form-control" />
-        </div>
-        <button onClick={handleSearch} type="button" class="btn btn-primary">
-          <i class="fas fa-search"></i>
-        </button>
-    </div>
+    <div className='search'>
+      <h1 className='search-heading'>Video Search App</h1>
+    <input
+        type="text"
+        placeholder="Enter a sentence"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
+      />
+      <button onClick={handleSearch}>Search</button>
 
       <div id="search-results">
         {searchResults.map((video) => (
@@ -39,10 +38,9 @@ const VideoSearchApp = () => {
               <h6 className="card-subtitle mb-2 text-body-secondary">
                 {video.tags.join(', ')}
               </h6>
-                <iframe width="250" height="150" src={video.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="250" height="150" src={video.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <p className="card-text">{video.description}</p>
                 Watch Video
-              </a>
             </div>
           </div>
         ))}
