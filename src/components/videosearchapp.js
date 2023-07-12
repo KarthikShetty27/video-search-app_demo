@@ -12,7 +12,7 @@ const VideoSearchApp = () => {
     // Perform search based on the sentence
     const results = videosData.filter((video) => {
       // Check if any of the video tags match the words in the sentence
-      return words.every((word) => video.tags.includes(word));
+      return words.some((word) => video.tags.includes(word));
     });
   
     // Update the search results state
