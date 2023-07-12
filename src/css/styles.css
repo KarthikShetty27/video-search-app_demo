@@ -1,0 +1,17 @@
+.search{
+    padding: 20px;
+    margin: 10px 20px;
+    text-align: center;
+}
+.search-heading{
+    padding: 20px;
+    margin: 20px;
+}
+#search-results{
+    padding: 20px;
+    margin: 20px;
+}
+.card{
+    width: 18rem;
+    margin: 15px auto;
+}
